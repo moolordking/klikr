@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+CLIKR
+</title>
+<style>
+body {
+  background-color: #F4F4F4;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#box {
+  background-color: white;
+  width: 200px;
+  height: 160px;
+  animation-fill-mode: forwards;
+  background-image: url("button.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  z-index: 5;
+}
+
+#box1 {
+  width: 200px;
+  height: 25px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  margin-bottom:7px;
+  font-size: 20px;
+  background-image: url("automate.png");
+  background-size: 200px;
+}
+
+#box:active {
+  animation: helium 0.25s;
+  animation-fill-mode: forwards;
+  z-index: 5;
+}
+
+#box2 {
+  width: 200px;
+  height: 25px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:7px;
+  background-image: url("advertise.png");
+  background-size: 200px;
+}
+
+#box3 {
+  width: 250px;
+  height: 25px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:7px;
+  background-image: url("industrialise.png");
+  background-size: 250px;
+}
+
+#box4 {
+  width: 270px;
+  height: 25px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:7px;
+  background-image: url("revolutionise.png");
+  background-size: 270px;
+}
+
+#box1:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box2:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box3:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+#box4:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box5 {
+  width: 280px;
+  height: 35px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:2px;
+  background-image: url("propagandize.png");
+  background-size: 280px;
+}
+
+#box5:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box6 {
+  width: 250px;
+  height: 28px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:2px;
+  background-image: url("capitalise.png");
+  background-size: 250px;
+}
+
+#box6:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box7 {
+  width: 280px;
+  height: 30px;
+  border-radius: 100px;
+  animation: argon 0.5s;
+  animation-fill-mode: forwards;
+  color: #DD4848;
+  font-family: arial black;
+  font-size: 20px;
+  margin-bottom:2px;
+  background-image: url("weaponise.png");
+  background-size: 280px;
+}
+
+#box7:hover {
+  border-radius: 40px;
+  animation: helium 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box:active {
+  animation: argon 0.1s;
+}
+
+@keyframes argon {
+  0% {
+  	transform: scale(0.95);
+  }
+  100% {
+  	transform: scale(1);
+  }
+}
+
+@keyframes helium {
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-family: Arial Black;
+  animation: neon 0.5s;
+  animation-fill-mode: forwards;
+  font-size: 20px;
+  color: #F4F4F4;
+  z-index: 20;
+  background-image: url("header.png");
+  height: 150px;
+  background-size: 100vw;
+  width: 105vw;
+  background-repeat: no-repeat;
+  margin-left: -10px;
+  margin-top: -8px;
+  margin-bottom: -50px;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: Arial Black;
+  animation: neon 0.5s;
+  animation-fill-mode: forwards;
+  font-size: 20px;
+  color: #F4F4F4;
+  z-index: 20;
+  color: white;
+  margin-top: -130px;
+  margin-bottom: 60px;
+}
+
+h1:hover {
+  transform: scale(1);
+  animation: xenon 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes xenon {
+  100% {
+  }
+}
+
+@keyframes neon {
+  100% {
+    transform: scale(1);
+  }
+}
+
+</style>
+</head>
+<body>
+<center>
+  <h1><br/><h2 id="cliques">>KLIKR</h2></h1>
+  <div id="box" onclick="cliqued()"></div>
+  <div id="box1" ontouchstart="automate()"></div>
+  <div id="box2" ontouchstart="automate2()"></div>
+  <div id="box3" ontouchstart="automate3()"></div>
+  <div id="box4" ontouchstart="automate4()"></div>
+  <div id="box5" ontouchstart="automate5()"></div>
+  <div id="box6" ontouchstart="automate6()"></div>
+  <div id="box7" ontouchstart="automate7()"></div>
+</center>
+</body>
+<script>
+var score = 0;
+
+window.onload = setInterval(loop, 100/60);
+
+function cliqued() {
+  score+=1;
+}
+
+function loop() {
+  document.getElementById("cliques").innerHTML = score.toFixed(0) + " KLIKS";
+}
+
+function automate() {
+  if (score > 99) {score -= 100; setInterval(addautomate, 1000 / 60);}
+}
+
+function automate2() {
+  if (score > 499) {score -= 500; setInterval(addautomate2, 1000 / 60);}
+}
+
+function automate3() {
+  if (score > 999) {score -= 1000; setInterval(addautomate3, 1000 / 60);}
+}
+
+function automate4() {
+  if (score > 4999) {score -= 5000; setInterval(addautomate4, 1000 / 60);}
+}
+
+function automate5() {
+  if (score > 49999) {score -= 50000; setInterval(addautomate5, 1000 / 60);}
+}
+
+function automate6() {
+  if (score > 499999) {score -= 500000; setInterval(addautomate6, 1000 / 60);}
+}
+
+function automate7() {
+  if (score > 8999999) {score -= 9000000; setInterval(addautomate7, 1000 / 60);}
+}
+
+function addautomate() {
+  score += 0.01;
+}
+
+function addautomate2() {
+  score += 0.06;
+}
+
+function addautomate3() {
+  score += 0.11;
+}
+
+function addautomate4() {
+  score += 0.55;
+}
+
+function addautomate5() {
+  score += 6.12;
+}
+
+function addautomate6() {
+  score += 75.6;
+}
+
+function addautomate7() {
+  score += 899.5;
+}
+
+</script>
+</html>
